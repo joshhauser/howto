@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>How to - Dev tips</title>
-        <meta charset="utf8">
+        <meta charset="UTF-8">
+        <meta lang="en-US">
         <link rel="stylesheet" href="css/paper.min.css">
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/style.css">
@@ -12,7 +13,7 @@
         <div class="row">
             <nav class="border fixed split-nav">
                 <div class="nav-brand">
-                  <h3><a href="#">How to - Dev tips</a></h3>
+                  <h3><a href="index.html">How to - Dev tips</a></h3>
                 </div>
                 <div class="collapsible">
                   <input id="collapsible1" type="checkbox" name="collapsible1">
@@ -23,48 +24,29 @@
                   </label>
                   <div class="collapsible-body">
                     <ul class="inline">
-                      <li><a href="#">Documentation</a></li>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Github</a></li>
+                      <a href="#"><li><a href="#">About</a></li></a>
+                      <a href="#"><li><a href="#">Github</a></li></a>
                     </ul>
                   </div>
                 </div>
               </nav>
         </div>
-        <div class="row">
-            <div class="col-3 col menu">
+        <div class="row" id="content">
+            <div class="paper container" id="menu-container">
                 <h3>Menu</h3>
                 <input type="text" id="search-bar" placeholder="Search...">
                 <hr>
-                <ol>
-                    <li>Do this</li>
-                    <li>Then this</li>
-                    <li>Finally this</li>
-                    <li>Then we'll go one deeper
-                      <ol>
-                        <li>Dillon</li>
-                        <li>Francis
-                          <ol>
-                            <li>What if we went...</li>
-                            <li>One more deeper?
-                              <ol>
-                                <li>DJ</li>
-                                <li>Hanzel
-                                  <ol>
-                                    <li>Five levels should be enough</li>
-                                    <li>Right?</li>
-                                  </ol>
-                                </li>
-                              </ol>
-                            </li>
-                          </ol>
-                        </li>
-                      </ol>
+                <ul>
+                    <li>Random number
+                        <ul>
+                            <a href="pages/1.html"><li>Generate random number with inclusive interval (JS)</li></a>
+                        </ul>
                     </li>
-                    <li>But don't forget this</li>
-                  </ol>
+                </ul>
             </div>
-            <div class="col-9 col"></div>
+            <div class="container paper">
+              <p>Click on a link in the menu to get a tip &#x1F609;</p>
+            </div>
         </div>
     </body>
 </html>
