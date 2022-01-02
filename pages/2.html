@@ -39,45 +39,52 @@
         </div>
       </nav>
     </div>
-    <div class="row" id="menu-content">
+    <div class="row" id="content">
       <div class="paper container" id="menu-container">
-        <h3>Menu</h3>
-        <input type="text" id="search-bar" placeholder="Search...">
-        <hr>
-        <ul>
-          <li>Random number
-            <ul>
-              <a href="#">
-                <li>Generate random number with inclusive interval (JS)</li>
-              </a>
-            </ul>
-          </li>
-          <li>Array's element searching
-            <a href="#">
-              <li>Find element's index in C array</li>
-            </a>
-          </li>
-        </ul>
-      </div>
+				<h3>Menu</h3>
+				<input type="text" id="search-bar" placeholder="Search...">
+				<hr>
+				<ul>
+					<li>Random number
+						<ul>
+							<a href="../pages/1.html">
+								<li>Generate random number with inclusive interval (JS)</li>
+							</a>
+						</ul>
+					</li>
+					<li>Array's element searching
+						<ul>
+							<a href="../pages/2.html">
+								<li>Find element's index in C array</li>
+							</a>
+						</ul>
+					</li>
+				</ul>
+			</div>
       <div class="container paper" id="tip">
         <h3>Find element's index in C array</h3>
 <pre><code class="hljs js">int index_in_int_array(int *array, int array_length, int searched) {
-  int i = 0;
-  int index = -1;
+  int i;
 
   for (i = 0; i < array_length; i++)
     if (array[i] == searched) return i;
 
-  return i != array_length ? index : -1;
+  return -1;
 }</code></pre>
-      <h4>Parameters:</h4>
-      <ul>
-        <li><b>array:</b> the array in which you want to search an element</li>
-        <li><b>array_length:</b> the length of the array (i.e. the number of elements)</li>
-        <li><b>searched:</b> the element to search</li>
-      </ul>
-      <h4>Returned value:</h4>
-      <p>The function returns the index of the searched element if it exists in the array, otherwise <code>-1</code>.</p>
+        <h4>Parameters:</h4>
+        <ul>
+          <li><b>array:</b> the array in which you want to search an element</li>
+          <li><b>array_length:</b> the length of the array (i.e. the number of elements)</li>
+          <li><b>searched:</b> the element to search</li>
+        </ul>
+        <h4>Returned value:</h4>
+        <p>The function returns the index of the searched element if it exists in the array, otherwise <code>-1</code>.</p>
+
+        <h4>Explanation:</h4>
+        <p>This function loops over an array (here is an array of integers) and return <code>i</code> when the element at index <code>i</code> in <code>array</code> is found,
+          so the <code>for</code> loop is interrupted.<br>
+          If the array is completely visited, it means that the searched element doesn't exist in <code>array</code>. Then, the function returns <code>-1</code>.
+        </p>
       </div>
     </div>
   </body>

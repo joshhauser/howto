@@ -1,26 +1,27 @@
-#menu-content {
+#content {
 	margin-top: 5%;
 }
 
-#menu-content #menu-container {
+#content #menu-container {
 	width: 20%;
+	height: max-content;
 }
 
-#menu-content h3 {
+#content h3 {
 	margin-top: 0;
 }
 
-#menu-content #menu-container #search-bar {
+#content #menu-container #search-bar {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#menu-content #menu-container a {
+#content #menu-container a {
 	color: black;
 }
 
-#menu-content #menu-container a:hover {
+#content #menu-container a:hover {
 	transition-duration: 0.25s;
 	color: var(--secondary);
 }
