@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Generate random numbers with JS</title>
+  <title>Find element's index in C array</title>
   <meta charset="UTF-8">
   <meta lang="en-US">
   <link rel="stylesheet" href="../css/paper.min.css">
@@ -60,19 +60,24 @@
         </ul>
       </div>
       <div class="container paper" id="tip">
-        <h3>Generate random number with inclusive interval (JS)</h3>
-<pre><code class="hljs js">function inclusiveRand(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+        <h3>Find element's index in C array</h3>
+<pre><code class="hljs js">int index_in_int_array(int *array, int array_length, int searched) {
+  int i = 0;
+  int index = -1;
+
+  for (i = 0; i < array_length; i++)
+    if (array[i] == searched) return i;
+
+  return i != array_length ? index : -1;
 }</code></pre>
       <h4>Parameters:</h4>
       <ul>
-        <li><b>min:</b> the start of the interval</li>
-        <li><b>max:</b> the end of the interval</li>
+        <li><b>array:</b> the array in which you want to search an element</li>
+        <li><b>array_length:</b> the length of the array (i.e. the number of elements)</li>
+        <li><b>searched:</b> the element to search</li>
       </ul>
       <h4>Returned value:</h4>
-      <p>The function returns a random number, between <code>min</code> and <code>max</code>.</p>
+      <p>The function returns the index of the searched element if it exists in the array, otherwise <code>-1</code>.</p>
       </div>
     </div>
   </body>

@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>How to - Dev tips</title>
-        <meta charset="UTF-8">
-        <meta lang="en-US">
-        <link rel="stylesheet" href="css/paper.min.css">
-        <link rel="stylesheet" href="css/menu.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-
-    <body>
-        <div class="row">
-            <nav class="border fixed split-nav">
-                <div class="nav-brand">
-                  <h3><a href="index.html">How to - Dev tips</a></h3>
-                </div>
-                <div class="collapsible">
-                  <input id="collapsible1" type="checkbox" name="collapsible1">
-                  <label for="collapsible1">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                  </label>
-                  <div class="collapsible-body">
-                    <ul class="inline">
-                      <a href="#"><li><a href="#">About</a></li></a>
-                      <a href="#"><li><a href="#">Github</a></li></a>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </div>
-        <div class="row" id="content">
-            <div class="paper container" id="menu-container">
-                <h3>Menu</h3>
-                <input type="text" id="search-bar" placeholder="Search...">
-                <hr>
-                <ul>
-                    <li>Random number
-                        <ul>
-                            <a href="pages/1.html"><li>Generate random number with inclusive interval (JS)</li></a>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="container paper">
-              <p>Click on a link in the menu to get a tip &#x1F609;</p>
-            </div>
-        </div>
-    </body>
+	<head>
+		<title>How to - Dev tips</title>
+		<meta charset="UTF-8">
+		<meta lang="en-US">
+		<link rel="stylesheet" href="css/paper.min.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="row">
+			<nav class="border fixed split-nav">
+				<div class="nav-brand">
+					<h3><a href="index.html">How to - Dev tips</a></h3>
+				</div>
+				<div class="collapsible">
+					<input id="collapsible1" type="checkbox" name="collapsible1">
+					<label for="collapsible1">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</label>
+					<div class="collapsible-body">
+						<ul class="inline">
+							<a href="#">
+								<li><a href="#">About</a></li>
+							</a>
+							<a href="#">
+								<li><a href="#">Github</a></li>
+							</a>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="row" id="menu-content">
+			<div class="row" id="menu-content">
+				<div class="paper container" id="menu-container">
+					<h3>Menu</h3>
+					<input type="text" id="search-bar" placeholder="Search...">
+					<hr>
+					<ul>
+						<li>Random number
+							<ul>
+								<a href="#">
+									<li>Generate random number with inclusive interval (JS)</li>
+								</a>
+							</ul>
+						</li>
+						<li>Array's element searching
+							<a href="#">
+								<li>Find element's index in C array</li>
+							</a>
+						</li>
+					</ul>
+				</div>
+			<div class="container paper" id="tip">
+				<p>Click on a link in the menu to get a tip &#x1F609;</p>
+			</div>
+		</div>
+	</body>
 </html>
