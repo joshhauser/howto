@@ -1,20 +1,4 @@
-let menuSearchBar;
-let menuContainer;
-let menuElts;
 
-/**
- * TODO:
- * - 
- */
-window.onload = () => {
-  menuSearchBar = document.getElementById('search-bar');
-  menuContainer = document.getElementById('menu-container');
-  menuElts = menuContainer.getElementsByTagName('a');
-
-  menuSearchBar.oninput = () => {
-    search(menuElts, menuSearchBar.value);
-  }
-}
 
 /**
  * Search a given string among menu's elements
