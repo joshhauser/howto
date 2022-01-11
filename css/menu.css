@@ -1,0 +1,19 @@
+#content #menu-container {
+	width: 20%;
+	height: max-content;
+}
+
+#content #menu-container #search-bar {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content #menu-container a {
+	background-image: none;
+}
+
+#content #menu-container a:hover {
+	transition-duration: 0.25s;
+	color: var(--secondary);
+}
