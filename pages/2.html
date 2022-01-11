@@ -8,60 +8,57 @@
   <link rel="stylesheet" href="../css/paper.min.css">
   <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/highlight.min.css">
+  <link id="codeStylesheet" rel="stylesheet" href="../css/highlightjs/stackoverflow-light.min.css">
   <script src="../js/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
+  <script src="../js/search.js"></script>
+  <script src="../js/darkmode.js"></script>
 </head>
-
   <body>
     <div class="row">
       <nav class="border fixed split-nav">
         <div class="nav-brand">
           <h3><a href="../index.html">How to - Dev tips</a></h3>
         </div>
-        <div class="collapsible">
-          <input id="collapsible1" type="checkbox" name="collapsible1">
-          <label for="collapsible1">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </label>
-          <div class="collapsible-body">
-            <ul class="inline">
-              <a href="#">
-                <li><a href="#">About</a></li>
-              </a>
-              <a href="#">
-                <li><a href="#">Github</a></li>
-              </a>
-            </ul>
+        <div style="display: flex;">
+          <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </label>
+            <div class="collapsible-body">
+              <ul class="inline">
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://github.com/joshhauser/howto.git" target="_blank">Github</a></li>
+              </ul>
+            </div>
           </div>
+          <fieldset class="form-group" id="dm">
+            <label class="paper-switch-2">
+              <input id="darkModeSwitch" name="darkModeSwitch" type="checkbox" checked />
+              <span class="paper-switch-slider round"></span>
+            </label>
+          </fieldset>
         </div>
       </nav>
     </div>
     <div class="row" id="content">
-      <div class="paper container" id="menu-container">
+      <div class="paper container col sm-6 md-4 lg-4" id="menu-container">
 				<h3>Menu</h3>
 				<input type="text" id="search-bar" placeholder="Search...">
 				<hr>
 				<ul>
-					<li>Random number
-						<ul>
-							<a href="../pages/1.html">
-								<li>Generate random number with inclusive interval (JS)</li>
-							</a>
-						</ul>
-					</li>
-					<li>Array's element searching
-						<ul>
-							<a href="../pages/2.html">
-								<li>Find element's index in C array</li>
-							</a>
-						</ul>
-					</li>
+          <a href="../pages/1.html">
+            <li>Generate random number with inclusive interval (JS)</li>
+          </a>
+          <a href="../pages/2.html">
+            <li>Find element's index in C array</li>
+          </a>
 				</ul>
 			</div>
-      <div class="container paper" id="tip">
+      <div class="container paper col sm-6 md-4 lg-8" id="tip">
         <h3>Find element's index in C array</h3>
 <pre><code class="hljs js">int index_in_int_array(int *array, int array_length, int searched) {
   int i;

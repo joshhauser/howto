@@ -1,5 +1,9 @@
-#content {
-	margin-top: 5%;
+#menu-container, #tip, #about {
+	margin-top: 3.5rem;
+}
+
+html.dark body {
+	background: #41403e;
 }
 
 #content #menu-container {
@@ -18,7 +22,7 @@
 }
 
 #content #menu-container a {
-	color: black;
+	background-image: none;
 }
 
 #content #menu-container a:hover {
@@ -28,4 +32,14 @@
 
 #tip {
 	margin-left: 0;
+}
+
+b {
+	font-weight: bo;
+}
+
+#dm {
+	display: flex;
+	height: 100%;
+	align-items: center;
 }
