@@ -11,7 +11,6 @@ let html;
 window.onload = () => {
   menuSearchBar = document.getElementById('search-bar');
   menuContainer = document.getElementById('menu-container');
-  
 
   if (menuSearchBar != null && menuContainer != null) {
     menuElts = menuContainer.getElementsByTagName('a');
